@@ -2,7 +2,7 @@
      [style.background-color]="color">
   <div class="column"
        *ngFor="let animal of animalList">       
-      <img src="{{animal.profileImageUrl}}">
+      <img class="animal-images" src="{{animal.profileImageUrl}}">
       <h2>{{animal.name}} - {{animal.animalType}}</h2>
   </div>
 </div>
