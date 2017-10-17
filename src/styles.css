@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/vendor/semantic.min.css';
+
+
+.ui.grid.animals>.row>.three.column.grid {
+    border: 1px solid black; 
+    
+}
+
+

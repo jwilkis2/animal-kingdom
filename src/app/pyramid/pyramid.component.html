@@ -1,3 +1,9 @@
-<p>
-  pyramid works!
-</p>
+
+
+<pyramid-row class="row" 
+  *ngFor="let level of buildService.getNumLevels(animalList)"
+  [animalList]="buildService.getAnimalsInLevel(level, animalList)"
+  [level]="level">
+</pyramid-row>
+
+

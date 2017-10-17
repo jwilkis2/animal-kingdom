@@ -1,3 +1,21 @@
-<p>
-  pyramid-row works!
-</p>
+<div class="ui three column grid"
+     [style.background-color]="color">
+  <div class="column"
+       *ngFor="let animal of animalList">       
+      <img src="{{animal.profileImageUrl}}">
+      <h2>{{animal.name}} - {{animal.animalType}}</h2>
+  </div>
+</div>
+<!--
+
+<div class="row">
+    <div class="column">
+        <img src="{{animalList[0].profileImageUrl}}">
+    </div>
+    <div class="column">
+      {{animalList[0].name}}
+      {{animalList[0].animalType}}
+    </div>
+  </div>
+
+-->

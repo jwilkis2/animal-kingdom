@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PyramidComponent } from './pyramid/pyramid.component';
 import { PyramidRowComponent } from './pyramid-row/pyramid-row.component';
+import { BuildService } from './build.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { PyramidRowComponent } from './pyramid-row/pyramid-row.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [BuildService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
